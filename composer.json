@@ -1,0 +1,35 @@
+{
+    "name": "alex-yashin/pina-counter-settings",
+    "keywords": ["php"],
+    "license": "MIT",
+    "homepage": "https://github.com/alex-yashin/pina-counter-settings/",
+    "support": {
+        "issues": "https://github.com/alex-yashin/pina-counter-settings/issues",
+        "source": "https://github.com/alex-yashin/pina-counter-settings/"
+    },
+    "authors": [
+        {
+            "name": "Alex Yashin",
+            "email": "alex-yashin@ya.ru"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "pinahq/framework": "*",
+        "alex-yashin/pina-settings": "*",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "ext-gd": "*",
+        "ext-fileinfo": "*",
+        "ext-exif": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "PinaCounterSettings\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
