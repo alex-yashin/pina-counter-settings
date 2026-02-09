@@ -4,6 +4,7 @@ namespace PinaCounterSettings;
 
 use Pina\App;
 use Pina\ModuleInterface;
+use Pina\Router;
 use PinaCounterSettings\Model\Counters;
 use PinaSettings\SQL\SettingsGateway;
 
@@ -28,10 +29,6 @@ class Module implements ModuleInterface
     public function __construct()
     {
         SettingsGateway::addSchema(new SQL\SettingsSchema);
-    }
-
-    public function http()
-    {
         App::place('scripts')->push(new Counters());
     }
 
